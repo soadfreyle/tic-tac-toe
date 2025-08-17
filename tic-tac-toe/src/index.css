@@ -121,7 +121,7 @@ body {
 .square {
   width: 100px;
   height: 100px;
-  border: 2px solid #eee;
+  border: 2px solid #7df089;
   border-radius: 5px;
   display: grid;
   place-items: center;
