@@ -71,6 +71,7 @@ body {
   width: fit-content;
   position: relative;
   border-radius: 10px;
+  
 }
 
 .turn .square,
@@ -82,7 +83,7 @@ body {
 }
 
 .square.is-selected {
-  color: #fff;
+  color: #e61111;
   background: #09f;
 }
 
