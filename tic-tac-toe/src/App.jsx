@@ -56,6 +56,10 @@ function App() {
     setWinner(null);
   };
 
+  const checkEndGame = (newBoard) => {
+    return newBoard.every((square) => square !== null);
+  };
+
   const updateBoard = (index) => {
     // no actualiza esta posicion
     if (board[index] || winner) return;
@@ -71,6 +75,8 @@ function App() {
 
     if (newWinner) {
       setWinner(newWinner);
+    } else if (checkEndGame(newBoard)) {
+      setWinner(false);
     }
   };
 
